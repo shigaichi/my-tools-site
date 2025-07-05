@@ -2,7 +2,9 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
+    <title>体力検定チェッカー</title>
     <script type="module" src="./main.ts"></script>
   </head>
   <body>
@@ -85,16 +87,49 @@
           </div>
         </div>
 
-        <div class="text-center">
+        <div class="text-center space-x-4">
           <button
             type="submit"
             class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded"
           >
             計算する
           </button>
+
+          <button
+            type="button"
+            id="clearBtn"
+            class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-6 rounded"
+          >
+            クリア
+          </button>
         </div>
+
+        <div
+          id="result"
+          class="mt-6 text-center text-lg font-bold text-blue-700"
+        ></div>
       </form>
     </main>
+
+    <section class="text-center mt-10 text-xs text-gray-600 px-4">
+      <p>
+        本ツールは
+        <a
+          href="http://www.clearing.mod.go.jp/kunrei_data/g_fd/2007/gz20080331_00129_000.pdf"
+          target="_blank"
+          class="underline text-blue-800"
+          >航空自衛官の体力測定実施基準について</a
+        >
+        （最終閲覧日：2025-07-05）を参考に作成しています。
+      </p>
+    </section>
+
+    <section class="text-center mt-6 text-xs text-gray-600 px-4 leading-relaxed">
+      <p>
+        フォームに入力された内容は、すべてブラウザ上でのみ処理され、外部のサーバーへ送信されることはありません。
+      </p>
+    </section>
+
     {{>footer}}
   </body>
 </html>
