@@ -1,0 +1,6 @@
+/* @import "tailwindcss"; */
+/* @import "tailwindcss" source("../../dist"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
