@@ -1,0 +1,4 @@
+/csv/*
+  Cache-Control: public, max-age=31556952, immutable
+/assets/*
+  Cache-Control: public, max-age=31556952, immutable
